@@ -9,6 +9,7 @@ var turnInput:float;
 var hoverInput:float;
 var pos:float;
 var tolerance:float = 1.5f;
+var turn:float;
 
 function Start () 
 {
@@ -19,7 +20,8 @@ function Update ()
 {
 	powerInput = Input.GetAxis ("Vertical");
 	turnInput = Input.GetAxis ("Horizontal");
-	hoverInput = Input.GetAxis ("Jump");
+	hoverInput = Input.GetAxis ("Height");
+	turn = Input.GetAxis("Turn");
 	
 	pos = drone.transform.position.y;
 }
@@ -44,4 +46,5 @@ function FixedUpdate ()
 		drone.AddRelativeTorque(0f, -turnSpeed, 0f);
 	if(Input.GetKey(KeyCode.E))
 		drone.AddRelativeTorque(0f, turnSpeed, 0f);
+	drone.AddRelativeTorque(0f, turn * turnSpeed, 0f);
 }
