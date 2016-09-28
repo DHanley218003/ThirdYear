@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
@@ -18,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -36,28 +35,6 @@ Global
 		$3.inheritsSet = Mono
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
-	EndGlobalSection
-
-EndGlobal
-=======
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{D1B324C0-B1F9-819F-289A-BDAC6BE71022}") = "Build 'N Crash", "Assembly-UnityScript.unityproj", "{2C7426F8-A432-05B3-142E-88947A6DAE94}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C7426F8-A432-05B3-142E-88947A6DAE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C7426F8-A432-05B3-142E-88947A6DAE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C7426F8-A432-05B3-142E-88947A6DAE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C7426F8-A432-05B3-142E-88947A6DAE94}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 							GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
@@ -80,4 +57,3 @@ Global
 	EndGlobalSection
 
 EndGlobal
->>>>>>> 054e087ba71eac1f32c06765eb93e802d7237928
