@@ -1,8 +1,8 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupItem="Assembly-UnityScript.unityproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\DroneControls.js">
     <Files>
-      <File FileName="Assets\SCRIPTS\DroneControls.js" Line="35" Column="37" />
+      <File FileName="Assets\SCRIPTS\DroneControls.js" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

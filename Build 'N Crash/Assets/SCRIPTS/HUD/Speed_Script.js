@@ -9,7 +9,7 @@ function Start () {
 
 }
 
-function Update () {
+function FixedUpdate () {
 speed.text = (valueOfSpeed).ToString();
 checkSpeed();
 }
