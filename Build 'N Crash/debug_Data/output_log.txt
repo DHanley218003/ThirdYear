@@ -1,0 +1,48 @@
+Mono path[0] = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Managed'
+Mono path[1] = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono'
+Mono config path = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55341
+Multi-casting "[IP] 192.168.23.22 [Port] 55341 [Flags] 3 [Guid] 14115720 [EditorId] 3701979931 [Version] 1048832 [Id] WindowsPlayer(X207-HP-16) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.23.22:55341]...
+PlayerConnection accepted from [192.168.23.22] handle:0x1c0
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56720
+PlayerConnection already initialized - listening to [192.168.23.22:55341]
+Initialize engine version: 5.1.3f1 (b0a23b31c3d8)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1991 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.145 seconds
+desktop: 1680x1050 59Hz; virtual: 3360x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.dll (this message is harmless)
+Compositor failed to initialize.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 48)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 247)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 19f0 -> priority: 1 
+  Thread -> id: 1e1c -> priority: 1 
+Waiting for finish
