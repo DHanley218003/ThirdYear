@@ -45,34 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\ExitOnEscape.cs" />
-     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\HSBColor.cs" />
-     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\MenuController.cs" />
-     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\RandomHSV.cs" />
-     <Compile Include="Assets\ZigFu\SampleScenes\_Data\Scripts\animatedTexture.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigFader.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigFollowHandPoint.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigPushDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigSteadyDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigSwipeDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UISessionControls\ZigWaveDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigHandRaiseDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigHandSessionDetector.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigMapJointToSession.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserControls\ZigSkeleton.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageAllUsers.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSingleSession.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSingleUser.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\UserEngagers\ZigEngageSplitScreen.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigDepthViewer.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigDepthmapToParticles.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigImageViewer.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigUserViewer.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Viewers\ZigUsersRadar.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\Zig.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\_Internal\Matrix3.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\_Internal\TimedBuffer.cs" />
-     <Compile Include="Assets\ZigFu\Scripts\_Internal\kinectSpecific.cs" />
+     <Compile Include="Assets\SCRIPTS\Arduino.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -80,14 +53,10 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="ZDK">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/ZDK.dll</HintPath>
- </Reference>
- <Reference Include="OpenNI.Net">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/OpenNI.Net.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{1E1D1915-28F3-F48A-DEDC-089D52CC4390}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{D1291486-8F45-6D86-611F-157EF8FA4004}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>

@@ -20,8 +20,9 @@ function Update ()
 {
 	powerInput = Input.GetAxis ("Vertical");
 	turnInput = Input.GetAxis ("Horizontal");
-	hoverInput = Input.GetAxis ("Height");
+	hoverInput = Input.GetAxis ("Jump");
 	turn = Input.GetAxis("Turn");
+
 	
 	pos = drone.transform.position.y;
 }

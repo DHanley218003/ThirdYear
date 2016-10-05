@@ -55,12 +55,6 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="ZDK">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/ZDK.dll</HintPath>
- </Reference>
- <Reference Include="OpenNI.Net">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/OpenNI.Net.dll</HintPath>
- </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

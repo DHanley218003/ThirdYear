@@ -77,16 +77,14 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="ZDK">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/ZDK.dll</HintPath>
- </Reference>
- <Reference Include="OpenNI.Net">
- <HintPath>C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/Assets/ZigFu/Scripts/_Internal/OpenNI.Net.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{1E1D1915-28F3-F48A-DEDC-089D52CC4390}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{D1291486-8F45-6D86-611F-157EF8FA4004}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{3D53B473-0CE8-DC61-63BD-6BFB40041C73}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
       <Project>{2C7426F8-A432-05B3-142E-88947A6DAE94}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
