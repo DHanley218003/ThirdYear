@@ -1,15 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\Kinect Scripts\BodyView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\DroneControls.js">
     <Files>
-      <File FileName="Assets\SCRIPTS\DroneControls.js" Line="1" Column="1" />
-      <File FileName="Assets\SCRIPTS\aiWaypointFollow.js" Line="78" Column="3" />
-      <File FileName="Assets\SCRIPTS\Kinect Scripts\BodyManager.cs" Line="75" Column="4" />
-      <File FileName="Assets\SCRIPTS\Kinect Scripts\BodyView.cs" Line="194" Column="4" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectEmulator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectEmulator1.cs" Line="8" Column="63" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectModelControllers\KinectModelControllerV2.cs" Line="97" Column="69" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectModelControllers\KinectPointController.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\DroneControls.js" Line="11" Column="28" />
+      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectImgControllers\DisplayColor.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\KinectDroneControls1.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

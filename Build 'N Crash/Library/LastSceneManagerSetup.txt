@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/KinectTest.unity
+- path: Assets/AITest.unity
   isLoaded: 1
   isActive: 1
