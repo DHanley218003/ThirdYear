@@ -13,7 +13,7 @@ public class PlayerFollowControlls_Script : MonoBehaviour {
 	void Start () {
 
 		guide = GameObject.Find ("PlayerGuide");
-		speed= guide.GetComponent<GuideOnRails_Script>().speed;
+		speed= guide.GetComponent<GuideOnRails_Script>().getSpeed();
 		speed2 = speed-1;	
 	}
 	
