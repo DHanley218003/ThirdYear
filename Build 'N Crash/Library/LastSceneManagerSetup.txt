@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SCENES/Demo.Beta0001.unity
+- path: Assets/SCENES/Demon - Kinect.unity
   isLoaded: 1
   isActive: 1

@@ -1,23 +1,24 @@
 ﻿#pragma strict
-var drone:Rigidbody;
+//var drone:Rigidbody;
 var speed:float = 20f;
-var turnSpeed:float = 14f;
+/*var turnSpeed:float = 14f;
 var hoverForce:float = 1.5f;
 var hoverHeight:float = 5f;
-var powerInput:float;
+var powerInput:float;*/
 var turnInput:float;
 var hoverInput:float;
-var pos:float;
-var tolerance:float = 1.5f;
+/*var pos:float;
+var tolerance:float = 1.5f;*/
 var playerHead : GameObject;
 var playerLeftHand : GameObject;
 var playerRightHand : GameObject;
 var playerLeftHip : GameObject;
 var playerRightHip : GameObject;
+var playerScript : PlayerFollowControlls_Script;
 
 function Start () 
 {
-	drone = gameObject.GetComponent(Rigidbody) as Rigidbody;
+	//drone = gameObject.GetComponent(Rigidbody) as Rigidbody;
 	playerHead = GameObject.Find("03_Head");
 	playerLeftHand = GameObject.Find("13_Hand_Left");
 	playerRightHand = GameObject.Find("23_Hand_Right");
@@ -27,11 +28,12 @@ function Start ()
 
 function Update ()
 {	
-	pos = drone.transform.position.y;
+	//pos = drone.transform.position.y;
 }
 
 function FixedUpdate () 
 {
+/*
 	if(playerLeftHand.transform.position.z < playerLeftHip.transform.position.z && playerRightHand.transform.position.z < playerRightHip.transform.position.z)
 	{
 		powerInput = 1;
@@ -57,6 +59,7 @@ function FixedUpdate ()
 	{
 		turnInput = 0;
 	}
+	*/
 
 	if(playerLeftHand.transform.position.y < playerLeftHip.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
 	{
@@ -71,6 +74,7 @@ function FixedUpdate ()
 		hoverInput = 0;
 	}
 
+	/*
 	hoverHeight += hoverInput;
 	if(drone.transform.position.y < hoverHeight - tolerance)
 	{
@@ -85,15 +89,21 @@ function FixedUpdate ()
 	drone.AddRelativeForce(0f,hoverForce,0f);
 	drone.AddRelativeForce(-(powerInput * speed), 0f, 0f);
 	drone.AddRelativeForce(0f, 0f, turnInput * turnSpeed);
+	*/
+	if(playerLeftHand.transform.position.y > playerHead.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
+	{
+		turnInput = 1;
+	}
+	else if(playerLeftHand.transform.position.y < playerLeftHip.transform.position.y && playerRightHand.transform.position.y > playerHead.transform.position.y)
+	{
+		turnInput = -1;
+	}
+	else
+	{
+		turnInput = 0;
+	}
 
-	if(playerLeftHand.transform.position.y > playerHead.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y
-	)
-	{
-		drone.AddRelativeTorque(0f, turnSpeed, 0f);
-	}
-	else if(playerLeftHand.transform.position.y < playerLeftHip.transform.position.y && playerRightHand.transform.position.y > playerHead.transform.position.y
-)
-	{
-		drone.AddRelativeTorque(0f, -turnSpeed, 0f);
-	}
+
+	playerScript.rotateVertical(-hoverInput);
+	playerScript.rotateHorizontal(turnInput);
 }
