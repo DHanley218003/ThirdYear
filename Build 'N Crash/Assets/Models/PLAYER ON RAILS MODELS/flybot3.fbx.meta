@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 6f7ecd752b3f426499bdc003253b4c63
+timeCreated: 1476637919
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ARM__1
+    100002: ARM__2
+    100004: Cap_1
+    100006: Cap_2
+    100008: Capsule
+    100010: CINEMA_4D_Editor
+    100012: Cone
+    100014: Cone_2
+    100016: Cylinder
+    100018: Cylinder_2
+    100020: Cylinder_3
+    100022: //RootNode
+    100024: Lathe_NURBS
+    100026: mainstrut
+    100028: mainstrut_2
+    100030: mini_bott
+    100032: proppeler
+    100034: proppeler_2
+    100036: Sphere
+    100038: Symmetry
+    100040: Symmetry_1
+    100042: Taper
+    100044: Torus
+    100046: Torus_2
+    100048: Torus_3
+    100050: Torus_4
+    400000: ARM__1
+    400002: ARM__2
+    400004: Cap_1
+    400006: Cap_2
+    400008: Capsule
+    400010: CINEMA_4D_Editor
+    400012: Cone
+    400014: Cone_2
+    400016: Cylinder
+    400018: Cylinder_2
+    400020: Cylinder_3
+    400022: //RootNode
+    400024: Lathe_NURBS
+    400026: mainstrut
+    400028: mainstrut_2
+    400030: mini_bott
+    400032: proppeler
+    400034: proppeler_2
+    400036: Sphere
+    400038: Symmetry
+    400040: Symmetry_1
+    400042: Taper
+    400044: Torus
+    400046: Torus_2
+    400048: Torus_3
+    400050: Torus_4
+    2300000: Cap_1
+    2300002: Cap_2
+    2300004: Capsule
+    2300006: Cone
+    2300008: Cone_2
+    2300010: Cylinder
+    2300012: Cylinder_2
+    2300014: Cylinder_3
+    2300016: Lathe_NURBS
+    2300018: mainstrut
+    2300020: mainstrut_2
+    2300022: proppeler
+    2300024: proppeler_2
+    2300026: Sphere
+    2300028: Symmetry_1
+    2300030: Torus
+    2300032: Torus_2
+    2300034: Torus_3
+    2300036: Torus_4
+    3300000: Cap_1
+    3300002: Cap_2
+    3300004: Capsule
+    3300006: Cone
+    3300008: Cone_2
+    3300010: Cylinder
+    3300012: Cylinder_2
+    3300014: Cylinder_3
+    3300016: Lathe_NURBS
+    3300018: mainstrut
+    3300020: mainstrut_2
+    3300022: proppeler
+    3300024: proppeler_2
+    3300026: Sphere
+    3300028: Symmetry_1
+    3300030: Torus
+    3300032: Torus_2
+    3300034: Torus_3
+    3300036: Torus_4
+    4300000: mainstrut
+    4300002: Torus
+    4300004: Cone
+    4300006: Cylinder
+    4300008: proppeler
+    4300010: mainstrut_2
+    4300012: Torus_2
+    4300014: Cone_2
+    4300016: Cylinder_2
+    4300018: proppeler_2
+    4300020: Torus_3
+    4300022: Lathe_NURBS
+    4300024: Cap_1
+    4300026: Cap_2
+    4300028: Sphere
+    4300030: Symmetry_1
+    4300032: Capsule
+    4300034: Cylinder_3
+    4300036: Torus_4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
