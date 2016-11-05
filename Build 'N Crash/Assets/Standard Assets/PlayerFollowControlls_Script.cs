@@ -18,7 +18,7 @@ public class PlayerFollowControlls_Script : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		float step = speed * Time.deltaTime;
 

@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\Testing scripts\Collision testing.js">
     <Files>
       <File FileName="Assets\SCRIPTS\GUI\MainMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\SCRIPTS\aiWaypointFollow.js" Line="1" Column="1" />
       <File FileName="Assets\SCRIPTS\FLY_Scripts\Arrow_Script.js" Line="1" Column="1" />
       <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\FlightScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\PlayerFollowControlls_Script.cs" Line="16" Column="29" />
-      <File FileName="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" Line="107" Column="31" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectSensor.cs" Line="147" Column="1" />
+      <File FileName="Assets\Standard Assets\PlayerFollowControlls_Script.cs" Line="21" Column="10" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" Line="1" Column="1" />
+      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectSensor.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\Testing scripts\Collision testing.js" Line="11" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
