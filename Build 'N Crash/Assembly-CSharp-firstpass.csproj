@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Arduino.cs" />
      <Compile Include="Assets\Standard Assets\GuideOnRails_Script.cs" />
      <Compile Include="Assets\Standard Assets\PlayerFollowControlls_Script.cs" />
      <None Include="Assets\Kinect Resources\Asset\Shaders\Normal-Diffuse.shader" />

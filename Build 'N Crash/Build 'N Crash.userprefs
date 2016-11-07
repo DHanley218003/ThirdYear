@@ -2,8 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\PlayerFollowControlls_Script.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\PlayerFollowControlls_Script.cs" Line="18" Column="3" />
-      <File FileName="Assets\Standard Assets\GuideOnRails_Script.cs" Line="6" Column="29" />
+      <File FileName="Assets\SCRIPTS\PowerUps\SpeedUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\PlayerFollowControlls_Script.cs" Line="27" Column="28" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\TunnelControls.cs" Line="18" Column="19" />
+      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectImgControllers\DisplayColor.cs" Line="25" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

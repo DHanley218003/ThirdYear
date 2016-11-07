@@ -61,6 +61,7 @@
      <Compile Include="Assets\SCRIPTS\CONTROLS\FLY_Scripts\FlightScript.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\FLY_Scripts\TunnelControls.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\MainMenu.cs" />
+     <Compile Include="Assets\SCRIPTS\PowerUps\SpeedUp.cs" />
      <None Include="Assets\Kinect Resources\Asset\Shaders\Normal-Diffuse.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

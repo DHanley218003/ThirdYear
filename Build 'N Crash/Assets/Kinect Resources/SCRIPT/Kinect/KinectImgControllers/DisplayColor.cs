@@ -22,7 +22,7 @@ public class DisplayColor : MonoBehaviour {
 	void Update () {
 		if (kinect.pollColor())
 		{
-			//tex.SetPixels32(kinect.getColor());
+			tex.SetPixels32(kinect.getColor());
 			tex.SetPixels32(mipmapImg(kinect.getColor(),640,480));
 			tex.Apply(false);
 		}

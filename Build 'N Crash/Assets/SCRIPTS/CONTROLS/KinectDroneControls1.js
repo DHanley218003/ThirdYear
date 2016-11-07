@@ -61,7 +61,7 @@ function FixedUpdate ()
 	}
 	*/
 
-	if(playerLeftHand.transform.position.y < playerLeftHip.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
+/*	if(playerLeftHand.transform.position.y < playerLeftHip.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
 	{
 		hoverInput = 1;
 	}
@@ -73,6 +73,8 @@ function FixedUpdate ()
 	{
 		hoverInput = 0;
 	}
+
+	*/
 
 	/*
 	hoverHeight += hoverInput;

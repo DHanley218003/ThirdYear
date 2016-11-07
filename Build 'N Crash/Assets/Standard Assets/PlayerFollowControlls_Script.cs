@@ -3,18 +3,30 @@ using System.Collections;
 
 public class PlayerFollowControlls_Script : MonoBehaviour {
 
-	public GameObject guide;
 	public float speed = 50.0f;
 	public float speed2 = 50.0f;
+	public int speed3 = 0;
 	private float rotation_V = 0f;
 	private float rotation_H = 0;
-
+	public Arduino fan;
+	public bool arduinoConnected = false;
+	public string comPort = "COM5";
 	// Use this for initialization
 	void Start () {
 
-		guide = GameObject.Find ("PlayerGuide");
-		speed= guide.GetComponent<GuideOnRails_Script>().getSpeed();
-		speed2 = speed-1;	
+		speed2 = speed-1;
+		if (arduinoConnected) 
+		{
+			fan = new Arduino (comPort);
+			fan.Start ();
+		}
+	}
+
+	void Update()
+	{
+		speed3 = (int) (speed * 6 + 1000);
+		if (arduinoConnected)
+			fan.WriteToArduino (speed3.ToString ());
 	}
 	
 	// Update is called once per frame
@@ -37,9 +49,8 @@ public class PlayerFollowControlls_Script : MonoBehaviour {
 		//transform.rotation = q;
 
 		//making sure to travel in direction of the guide element
-		Vector3 targetDir = guide.transform.position - transform.position;
 
-		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.4f * Time.deltaTime, 0.0F);
+		/*Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.4f * Time.deltaTime, 0.0F);
 		Debug.DrawRay(transform.position, newDir, Color.red);
 
 		if ((targetDir.magnitude) > 20) {
