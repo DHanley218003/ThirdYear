@@ -1,24 +1,3 @@
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.pdb
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEditor.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.Networking.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.UI.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.SerializationLogic.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.DataContract.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\ICSharpCode.NRefactory.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.UNetWeaver.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.CecilTools.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.Pdb.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.Mdb.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.xml
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEditor.xml
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.UI.xml
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.Networking.xml
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.dll
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.pdb
 C:\Users\rafal\Desktop\newestGitProject\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\rafal\Desktop\newestGitProject\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.pdb
 C:\Users\rafal\Desktop\newestGitProject\Build 'N Crash\Temp\bin\Debug\UnityEditor.dll
@@ -81,7 +60,6 @@ C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.Net
 C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.dll
 C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.pdb
-G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.dll
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.pdb
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEditor.dll
@@ -104,3 +82,25 @@ E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.dll
 E:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.pdb
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp.pdb
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEditor.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.Networking.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.UI.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.SerializationLogic.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.DataContract.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.UNetWeaver.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity.CecilTools.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.xml
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEditor.xml
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.UI.xml
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\UnityEngine.Networking.xml
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.dll
+G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.pdb

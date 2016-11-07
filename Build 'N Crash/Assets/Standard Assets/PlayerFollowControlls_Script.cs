@@ -82,6 +82,6 @@ public class PlayerFollowControlls_Script : MonoBehaviour {
 
 	public void rotateHorizontal(float input)
 	{
-		transform.Rotate(0, input, 0);
+		transform.Rotate(0, input*2, 0);
 	}
 }

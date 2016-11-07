@@ -26,11 +26,6 @@ function Start ()
 	playerRightHip = GameObject.Find("40_Hip_Right");
 }
 
-function Update ()
-{	
-	//pos = drone.transform.position.y;
-}
-
 function FixedUpdate () 
 {
 /*
@@ -92,7 +87,7 @@ function FixedUpdate ()
 	drone.AddRelativeForce(-(powerInput * speed), 0f, 0f);
 	drone.AddRelativeForce(0f, 0f, turnInput * turnSpeed);
 	*/
-	if(playerLeftHand.transform.position.y > playerHead.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
+/*	if(playerLeftHand.transform.position.y > playerHead.transform.position.y && playerRightHand.transform.position.y < playerRightHip.transform.position.y)
 	{
 		turnInput = 1;
 	}
@@ -104,8 +99,24 @@ function FixedUpdate ()
 	{
 		turnInput = 0;
 	}
+	*/
 
+	turnInput = playerLeftHand.transform.position.y - playerRightHand.transform.position.y;
+	print(turnInput);
+	if(turnInput > 1)
+	{
+		turnInput = 1;
+	}
+	else if(turnInput < -1)
+	{
+		turnInput = -1;
+	}
+	/*else if((turnInput > -0.05 && turnInput < 0) || (turnInput < 0.05 && turnInput > 0))
+	{
+		turnInput = 0;
+	}
+	*/
 
-	playerScript.rotateVertical(-hoverInput);
+	//playerScript.rotateVertical(-hoverInput);
 	playerScript.rotateHorizontal(turnInput);
 }
