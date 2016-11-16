@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MainMenu : MonoBehaviour 
 {
-	public void quitThisShit()
+	public void quit()
 	{
 		Application.Quit ();
 	}
 
-	public void debugThisShit()
+	public void debug()
 	{
-		Debug.Log ("Shit's been debugged");
+		Debug.Log ("A button was pressed!");
 	}
 
 	public void changeScene(string sceneName)
 	{
-		Application.LoadLevel(sceneName);
+		SceneManager.LoadScene(sceneName);
 	}
 }

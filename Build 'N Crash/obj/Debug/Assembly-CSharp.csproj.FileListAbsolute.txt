@@ -104,3 +104,4 @@ G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\Temp\bin\Debug\Unity
 G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.dll
 G:\3RD YEAR\Game Dev\Group Project\ThirdYear\Build 'N Crash\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

@@ -1,10 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\PlayerFollowControlls_Script.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\ControlScript.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\PlayerFollowControlls_Script.cs" Line="85" Column="30" />
-      <File FileName="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" Line="118" Column="4" />
-      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectImgControllers\DisplayColor.cs" Line="23" Column="1" />
+      <File FileName="Assets\SCRIPTS\PowerUps\SpeedUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\GUI\MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\ControlScript.cs" Line="27" Column="50" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\Powerups.cs" Line="25" Column="15" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\TunnelControls.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

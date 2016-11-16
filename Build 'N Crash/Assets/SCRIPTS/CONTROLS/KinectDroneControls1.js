@@ -14,7 +14,7 @@ var playerLeftHand : GameObject;
 var playerRightHand : GameObject;
 var playerLeftHip : GameObject;
 var playerRightHip : GameObject;
-var playerScript : PlayerFollowControlls_Script;
+var playerScript : ControlScript;
 
 function Start () 
 {
@@ -102,7 +102,7 @@ function FixedUpdate ()
 	*/
 
 	turnInput = playerLeftHand.transform.position.y - playerRightHand.transform.position.y;
-	print(turnInput);
+	//print(turnInput);
 	if(turnInput > 1)
 	{
 		turnInput = 1;

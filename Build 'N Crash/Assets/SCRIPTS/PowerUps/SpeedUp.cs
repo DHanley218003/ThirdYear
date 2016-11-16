@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SpeedUp : MonoBehaviour {
 	//Used to store drone controls script for use below.
-	public PlayerFollowControlls_Script player;
+	public Powerups player;
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +18,13 @@ public class SpeedUp : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		print ("Test");
+		//print ("Test");
 		//if the game object is called "Player", get a reference to the script "Drone Controls"  save in player and then increase speed and print it.
 		if (other.gameObject.name == "PLAYER") {
-			player = other.gameObject.GetComponent<PlayerFollowControlls_Script>();
-			player.speed += 10;
-			print (player.speed);
+			player = other.gameObject.GetComponent<Powerups>();
+			if(player.powerup == 0)
+				player.powerup = 1;
+			//print (player.speed);
 			Destroy (this.gameObject);
 		}
 	}
