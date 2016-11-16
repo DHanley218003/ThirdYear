@@ -5,6 +5,7 @@ public class ControlScript : MonoBehaviour {
 
 	public float speed = 50.0f;
 	public float speed2 = 50.0f;
+	public float updateRate;
 	public int speed3 = 0;
 	private float rotation_V = 0f;
 	private float rotation_H = 0;
@@ -39,7 +40,7 @@ public class ControlScript : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-
+		updateRate = 0.5f;
 		speed2 = speed-1;
 		if (arduinoConnected) 
 		{
@@ -50,7 +51,7 @@ public class ControlScript : MonoBehaviour {
 
 	void Update()
 	{
-		speed3 = (int) (speed * 6 + 1000);
+		speed3 = (int) (speed * 6 + 1200);
 		if (arduinoConnected)
 			fan.WriteToArduino (speed3.ToString ());
 	}
@@ -58,9 +59,9 @@ public class ControlScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (speed < 50)
-			speed++;
+			speed += updateRate;
 		if (speed > 50)
-			speed--;
+			speed -= updateRate;
 		
 		float step = speed * Time.deltaTime;
 

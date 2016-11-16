@@ -1,63 +1,58 @@
-Mono path[0] = 'C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/debug_Data/Managed'
-Mono path[1] = 'C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono'
-Mono config path = 'C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/Desktop/Desktop/ThirdYear/Build 'N Crash/debug_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55253
-Multi-casting "[IP] 192.168.1.2 [Port] 55253 [Flags] 3 [Guid] 1349844036 [EditorId] 3889912799 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-PC) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.1.2:55253]...
+Mono path[0] = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Managed'
+Mono path[1] = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono'
+Mono config path = 'C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/a00218003/Desktop/ThirdYear/Build 'N Crash/debug_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55188
+Multi-casting "[IP] 192.168.23.118 [Port] 55188 [Flags] 3 [Guid] 673898490 [EditorId] 2089882613 [Version] 1048832 [Id] WindowsPlayer(X207-HP-15) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.23.118:55188]...
 Timed out. Continuing without host connection.
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56036
-PlayerConnection already initialized - listening to [192.168.1.2:55253]
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56490
+PlayerConnection already initialized - listening to [192.168.23.118:55188]
 Initialize engine version: 5.4.1f1 (649f48bbbf0f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
     Vendor:   NVIDIA
-    VRAM:     4058 MB
+    VRAM:     1989 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.043 seconds
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 2944x1080 at -1024,0
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.132 seconds
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\debug_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 59Hz; virtual: 3360x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.727717 ms
+UnloadTime: 0.937683 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 16c -> priority: 1 
-  Thread -> id: 223c -> priority: 1 
-Scene 'Demon - Kinect' (-1) couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsyncNameIndexInternal(String, Int32, Boolean, Boolean)
-UnityEngine.SceneManagement.SceneManager:LoadScene(String, LoadSceneMode) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\SceneManagerBindings.gen.cs:98)
-UnityEngine.SceneManagement.SceneManager:LoadScene(String) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\SceneManagerBindings.gen.cs:93)
-MainMenu:changeScene(String) (at C:\Users\Desktop\Desktop\ThirdYear\Build 'N Crash\Assets\SCRIPTS\GUI\MainMenu.cs:19)
-UnityEngine.Events.InvokableCall`1:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:184)
-UnityEngine.Events.CachedInvokableCall`1:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:302)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:630)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:765)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:53)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:35)
-UnityEngine.UI.Button:OnSubmit(BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:49)
-UnityEngine.EventSystems.ExecuteEvents:Execute(ISubmitHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:129)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
-UnityEngine.EventSystems.StandaloneInputModule:SendSubmitEventToSelectedObject() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:328)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+  Thread -> id: fcc -> priority: 1 
+  Thread -> id: 3268 -> priority: 1 
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.523732 ms
+System memory in use before: 38.4 MB.
+System memory in use after: 38.3 MB.
 
-[C:/buildslave/unity/build/Runtime/SceneManager/SceneManager.cpp line 532] 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/SceneManagerBindings.gen.cs Line: 98)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 696.
+Total: 0.411970 ms (FindLiveObjects: 0.025800 ms CreateObjectMapping: 0.011651 ms MarkObjects: 0.142594 ms  DeleteObjects: 0.227485 ms)
+
+DirectoryNotFoundException: Could not find a part of the path "C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\Assets\Recordings\playback0".
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x001be] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/FileStream.cs:292 
+  at System.IO.FileStream..ctor (System.String path, FileMode mode) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode)
+  at KinectEmulator.LoadPlaybackFile (System.String filePath) [0x00000] in C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectEmulator.cs:74 
+  at KinectEmulator.Start () [0x00000] in C:\Users\a00218003\Desktop\ThirdYear\Build 'N Crash\Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectEmulator.cs:51 
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/FileStream.cs Line: 292)
 
