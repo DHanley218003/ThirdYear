@@ -26,8 +26,8 @@ public class SpeedUp : MonoBehaviour {
 			if(player.powerup == 0)
 				player.powerup = 1;
 			// testing speed boost on contact
-			playercs = other.gameObject.GetComponent<ControlScript>();
-			playercs.setSpeed (120.0f);
+			//playercs = other.gameObject.GetComponent<ControlScript>();
+			//playercs.setSpeed (120.0f);
 			//print (player.speed);
 			Destroy (this.gameObject);
 		}

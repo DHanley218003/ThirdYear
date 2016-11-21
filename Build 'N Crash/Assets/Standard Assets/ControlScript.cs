@@ -13,7 +13,7 @@ public class ControlScript : MonoBehaviour {
 	public bool arduinoConnected = false;
 	public string comPort = "COM5";
 
-
+	public float getSpeed(){return speed;}
 	public void setSpeed(float speed){this.speed = speed;}
 	public void stealSpeed()
 	{
