@@ -9,7 +9,7 @@ public class Powerups : MonoBehaviour
 	void Update()
 	{
 		input = Input.GetAxis ("Fire");
-		if (input == 1 || Input.GetKeyDown(KeyCode.A)) 
+		if (input == 1) 
 		{
 			usePowerup ();
 		}
@@ -26,7 +26,7 @@ public class Powerups : MonoBehaviour
 			break;
 		case 2:
 			speedLaser();
-			powerup = 0;
+			//powerup = 0;
 			break;
 		}
 	}

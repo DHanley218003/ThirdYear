@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.VR;
+//using VRStandardAssets.Utils;
 
 public class ControlScript : MonoBehaviour {
 
@@ -23,6 +25,7 @@ public class ControlScript : MonoBehaviour {
 		Debug.DrawRay (cam.position, cam.forward * 100, Color.black);
 		if (Physics.Raycast (ray, out hit, 500)) 
 		{
+			//VRInteractiveItem interactible = hit.collider.GetComponent<VRInteractiveItem>();
 			if(hit.collider.tag == "Enemy")
 			{
 				hit.transform.gameObject.GetComponent<ControlScript>().setSpeed(120.0f);
@@ -72,7 +75,7 @@ public class ControlScript : MonoBehaviour {
 
 		rotation_V = Input.GetAxis("Vertical") * step;
 		rotation_H = Input.GetAxis("Horizontal") * step;
-		rotateVertical(rotation_V);
+		//rotateVertical(rotation_V);
 		rotateHorizontal (rotation_H);
 		//this byt will alway keep level in z axis
 		Quaternion q = transform.rotation;
@@ -106,10 +109,10 @@ public class ControlScript : MonoBehaviour {
 	*/
 	}
 
-	public void rotateVertical(float input)
+	/*public void rotateVertical(float input)
 	{
 		transform.Rotate(input, 0 , 0);
-	}
+	}*/
 
 	public void rotateHorizontal(float input)
 	{

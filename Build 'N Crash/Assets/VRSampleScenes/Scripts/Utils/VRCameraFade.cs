@@ -49,7 +49,7 @@ namespace VRStandardAssets.Utils
         }
 
 
-        private void OnLevelWasLoaded()
+        private void OnLevelFinishedLoading()
         {
             // If applicable set the immediate colour to be faded out and then fade in.
             if (m_FadeInOnSceneLoad)

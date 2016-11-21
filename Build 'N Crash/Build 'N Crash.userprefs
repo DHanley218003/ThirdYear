@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\CONTROLS\FLY_Scripts\Arduino.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\ControlScript.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\ControlScript.cs" Line="24" Column="32" />
-      <File FileName="Assets\SCRIPTS\CONTROLS\Powerups.cs" Line="35" Column="62" />
-      <File FileName="Assets\SCRIPTS\HUD\Speed_Script.cs" Line="9" Column="26" />
-      <File FileName="Assets\SCRIPTS\GUI\Menu.cs" Line="3" Column="26" />
-      <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\Arduino.cs" Line="2" Column="26" />
+      <File FileName="Assets\Standard Assets\ControlScript.cs" Line="4" Column="3" />
+      <File FileName="Assets\SCRIPTS\GUI\Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\Arduino.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" Line="4" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
