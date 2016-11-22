@@ -4,31 +4,42 @@ using System.Linq;
 
 
 public class AgentBehaviourScript : MonoBehaviour {
-	public float speed = 5.0f;
-	public float turnSpeed = 1.0f;
+	public float speed = 50.0f;
+	public float turnSpeed = 3.0f;
 	public string [] waypointNames;
 	public Vector3 [] waypoints;
 	public Vector3 currentWaypoint;
 	public int wp_count = 0;
-	Quaternion rot;
+	public float updateRate = 0.5f;
+	//Quaternion rot;
 	public int waypointIndex = 0;
 
 
 	// Initialization
 	void Start ()
 	{
-		rot = transform.rotation;
+		//rot = transform.rotation;
 		initWaypointArray ();
 		currentWaypoint = waypoints [waypointIndex];
 	}
 
-
+	public void setSpeed(float speed){
+		this.speed = speed;
+	}
 
 	// Update is called once per frame
 	void Update ()
 	{
 		moveToNextWaypoint ();
 
+	}
+
+	void FixedUpdate()
+	{
+		if (speed < 50)
+			speed += updateRate;
+		if (speed > 50)
+			speed -= updateRate;
 	}
 
 	//##################################################################
@@ -43,12 +54,12 @@ public class AgentBehaviourScript : MonoBehaviour {
 
 
 		if (wp_count == 0) {
-			Debug.Log ("No objects with a tag - waypoint");
+			//Debug.Log ("No objects with a tag - waypoint");
 		} else {
 			waypoints = new Vector3 [wp_count];
 
 			for (int i = 0; i < wp_count; i++) {
-				print(allTheWaypoints [i].gameObject.name);
+				//print(allTheWaypoints [i].gameObject.name);
 				waypoints [i] = allTheWaypoints [i].transform.position;
 			}
 		}

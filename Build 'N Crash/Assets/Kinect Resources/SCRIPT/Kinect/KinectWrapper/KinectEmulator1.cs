@@ -8,8 +8,8 @@ using Kinect;
 public class KinectEmulator1 : MonoBehaviour, KinectInterface {
 	
 	public string inputFile = "Assets/Kinect/Recordings/playback0";
-	private string inputFileDefault = "Assets/Kinect/Recordings/playbackDefault";
-	private float playbackSpeed = 0.0333f;
+	//private string inputFileDefault = "Assets/Kinect/Recordings/playbackDefault";
+	private const float playbackSpeed = 0.0333f;
 	private float timer = 0;
 	private bool isDefault = true;
 	

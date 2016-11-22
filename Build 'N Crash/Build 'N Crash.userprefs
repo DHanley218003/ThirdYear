@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\ControlScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SCRIPTS\CONTROLS\ControlScript.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\ControlScript.cs" Line="4" Column="3" />
       <File FileName="Assets\SCRIPTS\GUI\Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\SCRIPTS\CONTROLS\FLY_Scripts\Arduino.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" Line="4" Column="11" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\ControlScript.cs" Line="19" Column="34" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\VREyeRaycaster.cs" Line="4" Column="11" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" Line="24" Column="8" />
+      <File FileName="Assets\SCRIPTS\CONTROLS\AgentBehaviourScript.cs" Line="38" Column="3" />
+      <File FileName="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectSensor.cs" Line="257" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

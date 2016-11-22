@@ -45,10 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\AIBank_Script.cs" />
-     <Compile Include="Assets\Standard Assets\AgentBehaviourScript.cs" />
-     <Compile Include="Assets\Standard Assets\Arduino.cs" />
-     <Compile Include="Assets\Standard Assets\ControlScript.cs" />
      <Compile Include="Assets\Standard Assets\GuideOnRails_Script.cs" />
      <None Include="Assets\Kinect Resources\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />

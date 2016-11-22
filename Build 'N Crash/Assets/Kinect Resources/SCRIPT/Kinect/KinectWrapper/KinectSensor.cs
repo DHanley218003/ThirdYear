@@ -254,7 +254,7 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	bool KinectInterface.pollDepth()
 	{
 		if (!updatedDepth && dataTimer == 0) {
-			print ("Data recieved");
+			//print ("Data recieved");
 			updatedDepth = true;
 			IntPtr imageFramePtr = IntPtr.Zero;
 			
@@ -293,7 +293,7 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 				hr = NativeMethods.NuiImageStreamReleaseFrame (depthStreamHandle, imageFramePtr);
 			}
 		} else {
-			print("No data recieved");
+			//print("No data recieved");
 		}
 		return newDepth;
 	}

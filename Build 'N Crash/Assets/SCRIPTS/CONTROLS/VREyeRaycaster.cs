@@ -10,7 +10,7 @@ namespace VRStandardAssets.Utils
     public class VREyeRaycaster : MonoBehaviour
     {
         public event Action<RaycastHit> OnRaycasthit;                   // This event is called every frame that the user's gaze is over a collider.
-
+		public float distance = 0;
 
         [SerializeField] private Transform m_Camera;
         [SerializeField] private LayerMask m_ExclusionLayers;           // Layers to exclude from the raycast.

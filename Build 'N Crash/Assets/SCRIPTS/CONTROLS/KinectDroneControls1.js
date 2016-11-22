@@ -1,4 +1,5 @@
 ﻿#pragma strict
+
 //var drone:Rigidbody;
 var speed:float = 20f;
 /*var turnSpeed:float = 14f;
@@ -14,7 +15,7 @@ var playerLeftHand : GameObject;
 var playerRightHand : GameObject;
 var playerLeftHip : GameObject;
 var playerRightHip : GameObject;
-var playerScript : ControlScript;
+//var playerScript : ControlScript;
 
 function Start () 
 {
@@ -118,5 +119,5 @@ function FixedUpdate ()
 	*/
 
 	//playerScript.rotateVertical(-hoverInput);
-	playerScript.rotateHorizontal(turnInput);
+	//playerScript.rotateHorizontal(turnInput);
 }

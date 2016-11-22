@@ -1,48 +1,45 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.VR;
-//using VRStandardAssets.Utils;
+using VRStandardAssets.Utils;
 
 public class ControlScript : MonoBehaviour {
 
 	public float speed = 50.0f;
 	public float speed2 = 50.0f;
-	public float updateRate;
+	public float distance;
+	public float updateRate = 0.5f;
 	public int speed3 = 0;
-	private float rotation_V = 0f;
+	//private float rotation_V = 0f;
 	private float rotation_H = 0;
 	public Arduino fan;
 	public bool arduinoConnected = false;
 	public string comPort = "COM5";
+	public VREyeRaycaster raycastScript;
+	public VRInteractiveItem target;
 
 	public float getSpeed(){return speed;}
 	public void setSpeed(float speed){this.speed = speed;}
 	public void stealSpeed()
 	{
-		RaycastHit hit;
-		Transform cam = Camera.main.transform;
-		Ray ray = new Ray(cam.position, cam.forward);
-		Debug.DrawRay (cam.position, cam.forward * 100, Color.black);
-		if (Physics.Raycast (ray, out hit, 500)) 
+		if (raycastScript.CurrentInteractible != null) 
 		{
-			//VRInteractiveItem interactible = hit.collider.GetComponent<VRInteractiveItem>();
-			if(hit.collider.tag == "Enemy")
+			print ("object detected!");
+			target = raycastScript.CurrentInteractible;
+			if (target.CompareTag ("Enemy")) 
 			{
-				hit.transform.gameObject.GetComponent<ControlScript>().setSpeed(120.0f);
+				target.GetComponent<AgentBehaviourScript> ().setSpeed (15.0f);
+				print ("object slowed!");
 				setSpeed (120.0f);
-			}
-			else
+			} else 
 			{
 				setSpeed (15.0f);
 			}
 		}
-		else
-		{
-			setSpeed (15.0f);
-		}
 	}
 	// Use this for initialization
 	void Start () {
+		raycastScript = GameObject.Find("MainCamera").GetComponent <VREyeRaycaster>();
 		updateRate = 0.5f;
 		speed2 = speed-1;
 		if (arduinoConnected) 
@@ -73,7 +70,7 @@ public class ControlScript : MonoBehaviour {
 
 
 
-		rotation_V = Input.GetAxis("Vertical") * step;
+		//rotation_V = Input.GetAxis("Vertical") * step;
 		rotation_H = Input.GetAxis("Horizontal") * step;
 		//rotateVertical(rotation_V);
 		rotateHorizontal (rotation_H);

@@ -52,7 +52,7 @@ namespace VRStandardAssets.Utils
 #endif
 
 #if UNITY_STANDALONE
-            VRSettings.loadedDevice = VRDeviceType.Oculus;
+			VRSettings.LoadDeviceByName("Oculus");
 #endif
             
 #if UNITY_PS4 && !UNITY_EDITOR
