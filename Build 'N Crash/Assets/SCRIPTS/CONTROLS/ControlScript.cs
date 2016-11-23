@@ -29,7 +29,6 @@ public class ControlScript : MonoBehaviour {
 	{
 		if (raycastScript.CurrentInteractible != null) 
 		{
-			Debug.Log ("object detected!");
 			target = raycastScript.CurrentInteractible;
 			if (target.CompareTag ("Enemy")) 
 			{

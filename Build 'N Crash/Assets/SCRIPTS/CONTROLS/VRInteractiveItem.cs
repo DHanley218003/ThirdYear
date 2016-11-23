@@ -22,6 +22,7 @@ namespace VRStandardAssets.Utils
 
         public bool IsOver
         {
+			
             get { return m_IsOver; }              // Is the gaze currently over this object?
         }
 
@@ -31,7 +32,6 @@ namespace VRStandardAssets.Utils
         public void Over()
         {
             m_IsOver = true;
-
             if (OnOver != null)
                 OnOver();
         }

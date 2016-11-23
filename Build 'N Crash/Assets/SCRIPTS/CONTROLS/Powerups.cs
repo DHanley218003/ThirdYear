@@ -26,7 +26,7 @@ public class Powerups : MonoBehaviour
 			break;
 		case 2:
 			speedLaser();
-			//powerup = 0;
+			powerup = 0;
 			break;
 		}
 	}
