@@ -4,8 +4,6 @@ using UnityEngine.VR;
 using VRStandardAssets.Utils;
 
 public class ControlScript : MonoBehaviour {
-
-	int test = 0;
 	public float speed = 50.0f;
 	public float speed2 = 50.0f;
 	public float turnSpeed = 60;
@@ -46,6 +44,7 @@ public class ControlScript : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
+		Debug.Log (Time.timeScale);
 		raycastScript = GameObject.Find("MainCamera").GetComponent <VREyeRaycaster>();
 		updateRate = 0.5f;
 		speed2 = speed-1;
@@ -58,8 +57,6 @@ public class ControlScript : MonoBehaviour {
 
 	void Update()
 	{
-		test++;
-		print ("test");
 		speed3 = (int) (speed * 6 + 1200);
 		if (arduinoConnected)
 			fan.WriteToArduino (speed3.ToString ());
@@ -126,13 +123,13 @@ public class ControlScript : MonoBehaviour {
 	}
 
 	//Stops player and instantiates menu
-	public void instantiateMenu()
+	public void pause()
 	{
-		if (menu == null) 
-		{
-			Time.timeScale = 0;
-			menu = (GameObject)Instantiate (menuObj, new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z + 1.0f), Quaternion.identity);
-			menu.transform.parent = transform;
-		}
+		Time.timeScale = 0;
+
+	}
+	public void resume()
+	{
+		Time.timeScale = 30;
 	}
 }

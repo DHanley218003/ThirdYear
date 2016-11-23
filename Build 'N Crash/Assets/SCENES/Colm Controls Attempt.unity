@@ -955,6 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   speed2: 50
+  turnSpeed: 60
   distance: 0
   updateRate: 0.5
   speedTarget: 50
@@ -964,6 +965,7 @@ MonoBehaviour:
   comPort: COM5
   raycastScript: {fileID: 0}
   target: {fileID: 0}
+  menuObj: {fileID: 0}
 --- !u!54 &983297377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1851,7 +1853,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013319866968, guid: 9d106260384b9a44aa9d5cf04a740ca0, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000013319866968, guid: 9d106260384b9a44aa9d5cf04a740ca0, type: 2}
       propertyPath: m_Layer

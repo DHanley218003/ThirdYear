@@ -117,7 +117,7 @@ function FixedUpdate ()
 	//Brings up menu if player makes an X shape with their arms
 	if(playerLeftHand.transform.position.x > playerRightHand.transform.position.x + 0.0175 && Mathf.Abs(playerLeftHand.transform.position.y - playerRightHand.transform.position.y) < 0.05)
 	{
-		//playerScript.instantiateMenu();
+		//playerScript.pause();
 	}
 	/*else if((turnInput > -0.05 && turnInput < 0) || (turnInput < 0.05 && turnInput > 0))
 	{
