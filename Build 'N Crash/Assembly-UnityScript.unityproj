@@ -51,6 +51,7 @@
      <Compile Include="Assets\SCRIPTS\Effects\CrashScript.js" />
      <Compile Include="Assets\SCRIPTS\Exit.js" />
      <Compile Include="Assets\SCRIPTS\HUD\Speed_Script.js" />
+     <Compile Include="Assets\SCRIPTS\Testing scripts\Collision testing.js" />
      <Compile Include="Assets\SCRIPTS\aiWaypointFollow.js" />
      <None Include="Assets\Kinect Resources\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />

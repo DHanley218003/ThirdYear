@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: da22e213865b10f4b8d1806dd1e522de
 timeCreated: 1479659658
+=======
+guid: 51d9b254622475c48b1fd857a638f3ce
+timeCreated: 1478366458
+>>>>>>> colm
 licenseType: Free
 NativeFormatImporter:
   userData: 

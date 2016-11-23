@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/SCENES/Player Recognition.unity
+=======
+- path: Assets/SCENES/Colm Controls Attempt.unity
+>>>>>>> colm
   isLoaded: 1
   isActive: 1
