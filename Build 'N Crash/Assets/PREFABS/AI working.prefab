@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011399619346}
   - 95: {fileID: 95000013665800552}
-  - 114: {fileID: 114000010526837604}
+  - 114: {fileID: 114000014131404608}
   m_Layer: 0
   m_Name: AnimatedBOT4
   m_TagString: Untagged
@@ -207,9 +207,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011958835774}
   - 114: {fileID: 114000012340666718}
+  - 114: {fileID: 114000011089277532}
   m_Layer: 0
   m_Name: AI working
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1446,23 +1447,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010526837604
+--- !u!114 &114000011089277532
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010647720694}
+  m_GameObject: {fileID: 1000011351444060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb0dfc574de64b4fa1ad176c7326139, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turningRight: 0
-  turningLeft: 0
-  normalFlight: 0
-  angle: 0
-  result: 0
-  damping: 1
 --- !u!114 &114000011887882366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1483,16 +1478,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011351444060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c42ed1f08238e47bbb1c1f40a4df1a, type: 3}
+  m_Script: {fileID: 11500000, guid: e9f869b5cfeef3447932306ce76d339f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
   turnSpeed: 3
+  updateRate: 0.5
+  speedTarget: 50
   waypointNames: []
   waypoints: []
   currentWaypoint: {x: 0, y: 0, z: 0}
   wp_count: 0
   waypointIndex: 0
+  distance: 0
+--- !u!114 &114000014131404608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010647720694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f7b1476c391dd47832710fde6bc99b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turningRight: 0
+  turningLeft: 0
+  normalFlight: 0
+  angle: 0
+  result: 0
+  damping: 1
 --- !u!135 &135000011769326140
 SphereCollider:
   m_ObjectHideFlags: 1
