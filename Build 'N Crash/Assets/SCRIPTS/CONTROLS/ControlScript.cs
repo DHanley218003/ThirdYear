@@ -5,8 +5,10 @@ using VRStandardAssets.Utils;
 
 public class ControlScript : MonoBehaviour {
 
+	int test = 0;
 	public float speed = 50.0f;
 	public float speed2 = 50.0f;
+	public float turnSpeed = 60;
 	public float distance;
 	public float updateRate = 0.5f;
 	public int speed3 = 0;
@@ -17,6 +19,10 @@ public class ControlScript : MonoBehaviour {
 	public string comPort = "COM5";
 	public VREyeRaycaster raycastScript;
 	public VRInteractiveItem target;
+	//Used for bringing up menu
+	public GameObject menuObj = null;
+	private GameObject menu = null;
+
 
 	public float getSpeed(){return speed;}
 	public void setSpeed(float speed){this.speed = speed;}
@@ -51,6 +57,8 @@ public class ControlScript : MonoBehaviour {
 
 	void Update()
 	{
+		test++;
+		print ("test");
 		speed3 = (int) (speed * 6 + 1200);
 		if (arduinoConnected)
 			fan.WriteToArduino (speed3.ToString ());
@@ -113,6 +121,17 @@ public class ControlScript : MonoBehaviour {
 
 	public void rotateHorizontal(float input)
 	{
-		transform.Rotate(0, input*2, 0);
+		transform.Rotate(0, input*Time.deltaTime*turnSpeed*2, 0);
+	}
+
+	//Stops player and instantiates menu
+	public void instantiateMenu()
+	{
+		if (menu == null) 
+		{
+			Time.timeScale = 0;
+			menu = (GameObject)Instantiate (menuObj, new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z + 1.0f), Quaternion.identity);
+			menu.transform.parent = transform;
+		}
 	}
 }

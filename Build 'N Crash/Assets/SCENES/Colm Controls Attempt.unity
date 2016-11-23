@@ -974,10 +974,10 @@ GameObject:
   - 95: {fileID: 983297374}
   - 114: {fileID: 983297376}
   - 54: {fileID: 983297377}
-  - 114: {fileID: 983297378}
   - 114: {fileID: 983297380}
   - 135: {fileID: 983297379}
   - 114: {fileID: 983297381}
+  - 114: {fileID: 983297378}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -1031,12 +1031,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   speed2: 50
+  turnSpeed: 120
   distance: 0
   updateRate: 0.5
   speed3: 0
   fan: {fileID: 0}
   arduinoConnected: 0
   comPort: COM5
+  raycastScript: {fileID: 0}
+  target: {fileID: 0}
+  menuObj: {fileID: 1000011898895752, guid: 7e7361e76731931469dbc4a49ce9a7fa, type: 2}
 --- !u!54 &983297377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1060,17 +1064,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 983297373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad8c1c6c70dacd449e6f7145c00c053, type: 3}
+  m_Script: {fileID: 11500000, guid: f605f0b5fe3f9d645a2f21e03100e18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  turnInput: 0
-  hoverInput: 0
-  playerHead: {fileID: 0}
-  playerLeftHand: {fileID: 0}
-  playerRightHand: {fileID: 0}
-  playerLeftHip: {fileID: 0}
-  playerRightHip: {fileID: 0}
+  crashEffectObj: {fileID: 1000013362480178, guid: ad9eac9d7f953fb4e969f5792ffd00eb,
+    type: 2}
 --- !u!135 &983297379
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1387,6 +1385,11 @@ Prefab:
       propertyPath: m_Name
       value: Sphere (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011662409494, guid: a8924681743f20341bcba01ffda143f9,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983297380}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8924681743f20341bcba01ffda143f9, type: 2}
   m_IsPrefabParent: 0

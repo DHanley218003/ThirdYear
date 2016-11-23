@@ -102,6 +102,7 @@ function FixedUpdate ()
 	}
 	*/
 
+	//Calculates player turning
 	turnInput = playerLeftHand.transform.position.y - playerRightHand.transform.position.y;
 	//print(turnInput);
 	if(turnInput > 1)
@@ -112,6 +113,12 @@ function FixedUpdate ()
 	{
 		turnInput = -1;
 	}
+
+	//Brings up menu if player makes an X shape with their arms
+	if(playerLeftHand.transform.position.x > playerRightHand.transform.position.x + 0.0175 && Mathf.Abs(playerLeftHand.transform.position.y - playerRightHand.transform.position.y) < 0.05)
+	{
+		//playerScript.instantiateMenu();
+	}
 	/*else if((turnInput > -0.05 && turnInput < 0) || (turnInput < 0.05 && turnInput > 0))
 	{
 		turnInput = 0;
@@ -120,4 +127,12 @@ function FixedUpdate ()
 
 	//playerScript.rotateVertical(-hoverInput);
 	//playerScript.rotateHorizontal(turnInput);
+}
+
+
+function OnCollisionEnter(collision : Collision)
+{
+	var contact: ContactPoint = collision.contacts[0];
+	var pos: Vector3 = contact.point;
+	//Instantiate(crashEffectObj, pos, new Quaternion(0,0,0,0));
 }

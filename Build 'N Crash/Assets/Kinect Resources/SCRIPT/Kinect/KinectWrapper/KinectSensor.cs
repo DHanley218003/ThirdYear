@@ -5,7 +5,6 @@ using System.Text;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using Kinect;
-//using UnityEditor.Sprites;
 
 public class KinectSensor : MonoBehaviour, KinectInterface {
 	//make KinectSensor a singleton (sort of)
@@ -34,7 +33,10 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	/// what point (relative to kinectCenter) should the sensor look at
 	/// </summary>
 	public Vector4 lookAt;
-	
+
+	//Amount of frames to pass before reading in new data. Used to improve performance.
+	private int delayFrames = 10;
+
 	/// <summary>
 	/// Variables used to pass to smoothing function. Values are set to default based on Action in Motion's Research
 	/// </summary>
@@ -51,7 +53,6 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	/// <summary>
 	///variables used for updating and accessing depth data 
 	/// </summary>
-	public int dataTimer = 9; //They number of frames between Kinect input
 	private bool updatedSkeleton = false;
 	private bool newSkeleton = false;
 	[HideInInspector]
@@ -139,14 +140,14 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 			long kinectAngle = (long)(theta * (180 / Mathf.PI));
 			NativeMethods.NuiCameraSetAngle(kinectAngle);
 			
-			DontDestroyOnLoad(gameObject);
+			//DontDestroyOnLoad(gameObject);
 			KinectSensor.Instance = this;
 			NativeMethods.NuiSetDeviceStatusCallback(new NuiStatusProc(), IntPtr.Zero);
 		}
 		
 		catch (Exception e)
 		{
-			Debug.Log(e.Message + "Kinect not connected!");
+			Debug.Log(e.Message);
 		}
 	}
 	
@@ -157,12 +158,13 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 		updatedColor = false;
 		newColor = false;
 		updatedDepth = false;
-		if (dataTimer > 0) {
-			dataTimer--;
-		} else {
-			dataTimer = 9;
-		}
 		newDepth = false;
+		//Decrement delayFrames every frame. If they fall below 0, reset them
+		delayFrames--;
+		if (delayFrames < 0) 
+		{
+			delayFrames = 10;
+		}
 	}
 	/// <summary>
 	///The first time in each frame that it is called, poll the kinect for updated skeleton data and return
@@ -173,7 +175,7 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	/// </returns>
 	bool KinectInterface.pollSkeleton()
 	{
-		if (!updatedSkeleton && dataTimer == 0)
+		if (!updatedSkeleton && delayFrames == 0)
 		{
 			updatedSkeleton = true;
 			int hr = NativeMethods.NuiSkeletonGetNextFrame(100,ref skeletonFrame);
@@ -216,7 +218,7 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	/// </returns>
 	bool KinectInterface.pollColor()
 	{
-		if (!updatedColor && dataTimer == 0)
+		if (!updatedColor && delayFrames == 0)
 		{
 			updatedColor = true;
 			IntPtr imageFramePtr = IntPtr.Zero;
@@ -253,8 +255,8 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 	/// </returns>
 	bool KinectInterface.pollDepth()
 	{
-		if (!updatedDepth && dataTimer == 0) {
-			//print ("Data recieved");
+		if (!updatedDepth && delayFrames == 0)
+		{
 			updatedDepth = true;
 			IntPtr imageFramePtr = IntPtr.Zero;
 			
@@ -265,35 +267,37 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 			/// current organization is this way to allow for rapid changes IF they're required
 			/// and to allow for experimentation with the 2 modes
 			/// </summary>
-			if (enableNearMode) {
+			if (enableNearMode)
+			{
 				NativeMethods.NuiImageStreamSetImageFrameFlags 
 										(depthStreamHandle, NuiImageStreamFlags.EnableNearMode);
 				//test = NativeMethods.NuiImageStreamSetImageFrameFlags 
 				//						(depthStreamHandle, NuiImageStreamFlags.TooFarIsNonZero);
-			} else {
+			}
+			
+			else
+			{
 				NativeMethods.NuiImageStreamSetImageFrameFlags
 										 (depthStreamHandle, NuiImageStreamFlags.None);
 			}
 			
-			int hr = NativeMethods.NuiImageStreamGetNextFrame (depthStreamHandle, 100, ref imageFramePtr);
-			if (hr == 0) {
+			int hr = NativeMethods.NuiImageStreamGetNextFrame(depthStreamHandle, 100, ref imageFramePtr);
+			if (hr == 0){
 				newDepth = true;
 				NuiImageFrame imageFrame;
-				imageFrame = (NuiImageFrame)Marshal.PtrToStructure (imageFramePtr, typeof(NuiImageFrame));
+				imageFrame = (NuiImageFrame)Marshal.PtrToStructure(imageFramePtr, typeof(NuiImageFrame));
 				
-				INuiFrameTexture frameTexture = (INuiFrameTexture)Marshal.GetObjectForIUnknown (imageFrame.pFrameTexture);
+				INuiFrameTexture frameTexture = (INuiFrameTexture)Marshal.GetObjectForIUnknown(imageFrame.pFrameTexture);
 				
-				NuiLockedRect lockedRectPtr = new NuiLockedRect ();
+				NuiLockedRect lockedRectPtr = new NuiLockedRect();
 				IntPtr r = IntPtr.Zero;
 				
-				frameTexture.LockRect (0, ref lockedRectPtr, r, 0);
-				depthPlayerData = extractDepthImage (lockedRectPtr);
+				frameTexture.LockRect(0,ref lockedRectPtr,r,0);
+				depthPlayerData = extractDepthImage(lockedRectPtr);
 				
-				frameTexture.UnlockRect (0);
-				hr = NativeMethods.NuiImageStreamReleaseFrame (depthStreamHandle, imageFramePtr);
+				frameTexture.UnlockRect(0);
+				hr = NativeMethods.NuiImageStreamReleaseFrame(depthStreamHandle, imageFramePtr);
 			}
-		} else {
-			//print("No data recieved");
 		}
 		return newDepth;
 	}

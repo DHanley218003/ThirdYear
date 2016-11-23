@@ -38,16 +38,17 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraFreeFloat.js" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\KinectDroneControls1.js" />
      <Compile Include="Assets\SCRIPTS\DroneControls.js" />
+     <Compile Include="Assets\SCRIPTS\Effects\CrashScript.js" />
      <Compile Include="Assets\SCRIPTS\Exit.js" />
      <Compile Include="Assets\SCRIPTS\HUD\Speed_Script.js" />
      <Compile Include="Assets\SCRIPTS\aiWaypointFollow.js" />
@@ -60,10 +61,10 @@
      <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Kinect Resources\SCRIPT\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\KinectDroneControls.cs" />
      <Compile Include="Assets\MoveTo.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\AIBank_Script.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\AgentBehaviourScript.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRTrackingReset.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\MainMenu.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\Menu.cs" />
+     <Compile Include="Assets\SCRIPTS\GUI\PlayerConfirmation.cs" />
      <Compile Include="Assets\SCRIPTS\HUD\Speed_Script.cs" />
      <Compile Include="Assets\SCRIPTS\PowerUps\SpeedUp.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
@@ -135,10 +137,10 @@
      <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Users/a00218003/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
