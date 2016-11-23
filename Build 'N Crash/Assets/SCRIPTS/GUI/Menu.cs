@@ -1,56 +1,54 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using VRStandardAssets.Utils;
 
 public class Menu : MonoBehaviour 
 {
+	[SerializeField] private VRInteractiveItem m_InteractiveItem;
+
+	private void OnEnable()
+	{
+		m_InteractiveItem.OnOver += HandleOver;
+		m_InteractiveItem.OnOut += HandleOut;
+		m_InteractiveItem.OnClick += HandleClick;
+		m_InteractiveItem.OnDoubleClick += HandleDoubleClick;
+	}
 	
-	public int timeToHover = 300;
-	public int counter = 0;
-	public void FixedUpdate()
+	
+	private void OnDisable()
 	{
-		checkIfHover ();
+		m_InteractiveItem.OnOver -= HandleOver;
+		m_InteractiveItem.OnOut -= HandleOut;
+		m_InteractiveItem.OnClick -= HandleClick;
+		m_InteractiveItem.OnDoubleClick -= HandleDoubleClick;
 	}
-	public void quit()
+	
+	
+	//Handle the Over event
+	private void HandleOver()
 	{
-		Application.Quit ();
+		Debug.Log("Show over state");
 	}
-
-	public void debug()
+	
+	
+	//Handle the Out event
+	private void HandleOut()
 	{
-		Debug.Log ("A button was pressed!");
+		Debug.Log("Show out state");
 	}
-
-	public void changeScene(string sceneName)
+	
+	
+	//Handle the Click event
+	private void HandleClick()
 	{
-		SceneManager.LoadScene(sceneName);
+		Debug.Log("Show click state");
 	}
-
-	public void checkIfHover()
+	
+	
+	//Handle the DoubleClick event
+	private void HandleDoubleClick()
 	{
-		RaycastHit hit;
-		Transform cam = Camera.main.transform;
-		Ray ray = new Ray(cam.position, cam.forward);
-		Debug.DrawRay (cam.position, cam.forward * 100, Color.black);
-		if (Physics.Raycast (ray, out hit, 500)) 
-		{
-			if (hit.collider.tag == "Start") {
-				if (counter >= timeToHover)
-					changeScene ("Colm Controls Attempt");
-				else
-					counter++;
-			} else if (hit.collider.tag == "Options") {
-				if (counter >= timeToHover)
-					debug();
-				else
-					counter++;
-			} else if (hit.collider.tag == "Quit") {
-				if (counter >= timeToHover)
-					quit();
-				else
-					counter++;
-			} else
-				counter = 0;
-		}
+		Debug.Log("Show double click");
 	}
 }

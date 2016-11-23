@@ -11,6 +11,7 @@ public class ControlScript : MonoBehaviour {
 	public float turnSpeed = 60;
 	public float distance;
 	public float updateRate = 0.5f;
+	public float speedTarget = 50f;
 	public int speed3 = 0;
 	//private float rotation_V = 0f;
 	private float rotation_H = 0;
@@ -30,7 +31,7 @@ public class ControlScript : MonoBehaviour {
 	{
 		if (raycastScript.CurrentInteractible != null) 
 		{
-			print ("object detected!");
+			Debug.Log ("object detected!");
 			target = raycastScript.CurrentInteractible;
 			if (target.CompareTag ("Enemy")) 
 			{
@@ -66,9 +67,9 @@ public class ControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (speed < 50)
+		if (speed < speedTarget)
 			speed += updateRate;
-		if (speed > 50)
+		if (speed > speedTarget)
 			speed -= updateRate;
 		
 		float step = speed * Time.deltaTime;

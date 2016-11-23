@@ -17,3 +17,7 @@ Temp
 *.pidb
 *.sln
 *.log
+*.meta
+*.mdb
+*.dll
+*.log
