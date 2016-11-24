@@ -19,8 +19,23 @@ public class ControlScript : MonoBehaviour {
 	public VREyeRaycaster raycastScript;
 	public VRInteractiveItem target;
 	//Used for bringing up menu
+
 	public GameObject menuObj = null;
 	private GameObject menu = null;
+
+	//Prefab with particleSystem to instantiate when player is going above a certain speed
+	public GameObject speedEffectObj;
+	//Stores an instantiated Object of the above prefab
+	private GameObject speedEffect; 
+	//Stores the particleSystem component of the above object
+	private ParticleSystem speedParticles; 
+	//A prefab containing a light source and particle system to create sparks when the player collides
+	public GameObject sparkEffectObj;
+
+	//Time in seconds between instances of sparkEffectObj being created
+	public float timeBetweenSparks;
+	//Keeps track of time until next spark is instantiated
+	private float sparkTimer;
 
 
 	public float getSpeed(){return speed;}
@@ -52,6 +67,8 @@ public class ControlScript : MonoBehaviour {
 			fan = new Arduino (comPort);
 			fan.Start ();
 		}
+
+		speedEffect = null;//Ensures speedEffect is initialised to null
 	}
 
 	void Update()
@@ -59,6 +76,21 @@ public class ControlScript : MonoBehaviour {
 		speed3 = (int) (speed * 6 + 1200);
 		if (arduinoConnected)
 			fan.WriteToArduino (speed3.ToString ());
+
+		//If speed is above a certain level, and there is no speedEffect, create one as a child of the player, and adjust it's position and rotation to face the player from in front.
+		if (speed > 70 && speedEffect == null) {
+			speedEffect = (GameObject)Instantiate (speedEffectObj, transform.position, transform.rotation);
+			speedParticles = speedEffect.GetComponent<ParticleSystem>();
+			speedEffect.transform.Translate(new Vector3(0,0,46));
+			speedEffect.transform.Rotate(new Vector3(0,180,0));
+			speedEffect.transform.parent = transform;
+		} 
+		//When speed falls below a certain value, and there is a speedEffect, stop it and destroy it after a brief delay
+		else if (speed < 70 && speedEffect != null) {
+			speedParticles.Stop();
+			Destroy (speedEffect, 0.5f);//A brief delay between stopping and destruction allows all particles to pass the player, rather than have them disappear instantly
+			speedEffect = null;//Ensure speedEffect is reset to null
+		}
 	}
 	
 	// Update is called once per frame
@@ -116,6 +148,7 @@ public class ControlScript : MonoBehaviour {
 		transform.Rotate(input, 0 , 0);
 	}*/
 
+	//Used to rotate the player based on player input
 	public void rotateHorizontal(float input)
 	{
 		transform.Rotate(0, input*Time.deltaTime*turnSpeed*2, 0);
@@ -131,4 +164,35 @@ public class ControlScript : MonoBehaviour {
 	{
 		Time.timeScale = 30;
 	}
+
+
+	void OnCollisionEnter(Collision collision)
+	{
+		ContactPoint contact = collision.contacts[0];//Gets the point of contact (only a single one) of the collision
+		Vector3 pos = contact.point;
+		Instantiate(sparkEffectObj, pos, new Quaternion(0,0,0,0));//Instantiates a sparking effect at the point of contact
+		sparkTimer = timeBetweenSparks;//Sets a timer until the next spark (used in OnCollisionStay())
+
+	}
+
+	void OnCollisionStay(Collision collision)
+	{
+		//If it is time for the next spark, instantiate one at the point of contact
+		if (sparkTimer == 0) 
+		{
+			ContactPoint contact = collision.contacts[0];
+			Vector3 pos = contact.point;
+			Instantiate(sparkEffectObj, pos, new Quaternion(0,0,0,0));
+			sparkTimer = timeBetweenSparks;//Resets the timer after instantiating a spark
+		}
+
+		//Counts down the timer
+		sparkTimer -= Time.deltaTime;
+
+		//Ensures the timer is never a negative number
+		if (sparkTimer < 0) 
+		{
+			sparkTimer = 0;
+		}
+	}		
 }

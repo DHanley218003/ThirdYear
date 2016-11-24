@@ -159,7 +159,7 @@ public class KinectSensor : MonoBehaviour, KinectInterface {
 		newColor = false;
 		updatedDepth = false;
 		newDepth = false;
-		//Decrement delayFrames every frame. If they fall below 0, reset them
+		//Count down the frames until data is read in again. Reset them after 0.
 		delayFrames--;
 		if (delayFrames < 0) 
 		{

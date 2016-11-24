@@ -8,12 +8,18 @@ using System.Collections;
 
 public class PlayerConfirmation : MonoBehaviour {
 
+	//Index (from build settings) of the level to be loaded 
 	public int indexOfLevelToLoad;
+
+	//Necessary player body parts from KinectPlayerBody
 	GameObject playerLeftHand;
 	GameObject playerRightHand;
 	GameObject playerLeftShoulder;
-	GameObject playerRightShoulder;
+
+	//Holds the y coordinate of the players left hand, as this value is used repeatedly
 	float leftHandY;
+
+	//True if the player is in position, and the level should load.
 	bool inPosition;
 
 	void Start () 

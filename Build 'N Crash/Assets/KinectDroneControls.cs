@@ -1,34 +1,33 @@
-﻿using UnityEngine;
+﻿/*This script interprets the players movements as seen by the Kinect Wrapper Package for Unity3D,
+  and calls relevant scripts from ControlScript.cs.*/
+
+using UnityEngine;
 using System.Collections;
 
 public class KinectDroneControls : MonoBehaviour {
 
-	float speed = 20f;
-	float turnInput;
+	float turnInput; //Stores the value used to calculate turning based on player input
 
-	GameObject playerHead;
+	//Stores the players left and right hands. These are objects in the scene, children of KinectPlayerBody and move to match the players movements
 	GameObject playerLeftHand;
 	GameObject playerRightHand;
-	GameObject playerLeftHip;
-	GameObject playerRightHip;
-	public GameObject crashEffectObj;
+
+
+	//Another script attached to player, which contains functions for moving the player, as well as collision functions.
 	ControlScript playerScript;
+
 
 	void Start () 
 	{
-		playerHead = GameObject.Find("03_Head");
 		playerLeftHand = GameObject.Find("13_Hand_Left");
 		playerRightHand = GameObject.Find("23_Hand_Right");
-		playerLeftHip = GameObject.Find("30_Hip_Left");
-		playerRightHip = GameObject.Find("40_Hip_Right");
 		playerScript = GetComponent<ControlScript> ();
 	}
 
 	void FixedUpdate () 
 	{
-		//Calculates player turning
+		//Calculates player turning as a float between 1 and -1 (mimicking horizontalAxis)
 		turnInput = playerLeftHand.transform.position.y - playerRightHand.transform.position.y;
-		//print(turnInput);
 		if(turnInput > 1)
 		{
 			turnInput = 1;
@@ -44,15 +43,7 @@ public class KinectDroneControls : MonoBehaviour {
 			playerScript.pause();
 		}
 
-		//playerScript.rotateVertical(-hoverInput);
+		//Calls a function in ControlScript to rotate the player based on their input
 		playerScript.rotateHorizontal(turnInput);
-	}
-
-
-	void OnCollisionEnter(Collision collision)
-	{
-		ContactPoint contact = collision.contacts[0];
-		Vector3 pos = contact.point;
-		Instantiate(crashEffectObj, pos, new Quaternion(0,0,0,0));
 	}
 }

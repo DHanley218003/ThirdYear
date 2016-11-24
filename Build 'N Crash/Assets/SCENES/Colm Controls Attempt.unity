@@ -921,10 +921,10 @@ GameObject:
   - 95: {fileID: 983297374}
   - 114: {fileID: 983297376}
   - 54: {fileID: 983297377}
-  - 114: {fileID: 983297378}
   - 114: {fileID: 983297380}
   - 135: {fileID: 983297379}
   - 114: {fileID: 983297381}
+  - 114: {fileID: 983297378}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -990,6 +990,11 @@ MonoBehaviour:
   raycastScript: {fileID: 0}
   target: {fileID: 0}
   menuObj: {fileID: 0}
+  speedEffectObj: {fileID: 1000012088672198, guid: 0142825602cb0804a82fafa16ec638cd,
+    type: 2}
+  sparkEffectObj: {fileID: 1000013362480178, guid: ad9eac9d7f953fb4e969f5792ffd00eb,
+    type: 2}
+  timeBetweenSparks: 0
 --- !u!54 &983297377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1013,17 +1018,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 983297373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad8c1c6c70dacd449e6f7145c00c053, type: 3}
+  m_Script: {fileID: 11500000, guid: f605f0b5fe3f9d645a2f21e03100e18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  turnInput: 0
-  hoverInput: 0
-  playerHead: {fileID: 0}
-  playerLeftHand: {fileID: 0}
-  playerRightHand: {fileID: 0}
-  playerLeftHip: {fileID: 0}
-  playerRightHip: {fileID: 0}
 --- !u!135 &983297379
 SphereCollider:
   m_ObjectHideFlags: 0
