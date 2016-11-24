@@ -60,7 +60,7 @@ public class AgentBehaviourScript : MonoBehaviour {
 				{
 					float xVec = allTheWaypoints [i].transform.position.x + rnd();
 					float yVec = allTheWaypoints [i].transform.position.y + rnd();
-					float zVec = allTheWaypoints [i].transform.position.z + rnd();
+					float zVec = allTheWaypoints [i].transform.position.z ;
 
 					waypoints [i] = new Vector3(xVec,yVec,zVec);
 					//waypoints [i] = allTheWaypoints [i].transform.position;
