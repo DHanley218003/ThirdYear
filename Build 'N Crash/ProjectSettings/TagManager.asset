@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Waypoint
   - Enemy
+  - Quit
+  - Options
+  - Start
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -15,12 +19,12 @@ TagManager:
   - UI
   - 
   - 
-  - Ethan
-  - MazeWalls
-  - MazeTurret
-  - MazeTurretBullet
-  - Bg
-  - FPSWeapon
+  - Particles
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

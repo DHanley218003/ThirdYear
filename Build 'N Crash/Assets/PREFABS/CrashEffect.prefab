@@ -23,7 +23,7 @@ GameObject:
   - 108: {fileID: 108000014102573290}
   - 199: {fileID: 199000011448496218}
   - 198: {fileID: 198000011779051988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightComponent: {fileID: 0}
-  aliveTime: 0.2
+  startAliveTime: 0.2
 --- !u!198 &198000011779051988
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -145,7 +145,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 1
+      scalar: 0.05
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -306,7 +306,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 0.7254902, b: 0, a: 1}
       minMaxState: 2
     startSize:
-      scalar: 0.05
+      scalar: 0.03
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -524,9 +524,9 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: 0.1
+    radius: 1
     angle: 25
-    length: 5
+    length: 1
     boxX: 1
     boxY: 1
     boxZ: 1

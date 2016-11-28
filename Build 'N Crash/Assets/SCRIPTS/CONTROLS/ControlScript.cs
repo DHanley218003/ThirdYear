@@ -37,6 +37,11 @@ public class ControlScript : MonoBehaviour {
 	//Keeps track of time until next spark is instantiated
 	private float sparkTimer;
 
+	//A grinding sound effect, to play during collisions
+	public AudioSource grindSound;
+
+	private int collisionCount; //Counts the number of collisions the object is currently in
+
 
 	public float getSpeed(){return speed;}
 	public void setSpeed(float speed){this.speed = speed;}
@@ -68,6 +73,7 @@ public class ControlScript : MonoBehaviour {
 			fan.Start ();
 		}
 
+		collisionCount = 0; //Assumes player does not start in a collision
 		speedEffect = null;//Ensures speedEffect is initialised to null
 	}
 
@@ -168,11 +174,17 @@ public class ControlScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision)
 	{
+		/*update collisionCount, unless the collision is a powerUp
+		 * powerUps are destroyed on contact, and will NOT have an OnCollisionExit() call
+		 * so we ignore them here*/
+		if (collision.gameObject.tag != "PowerUp")
+		{
+			collisionCount++;
+		}
 		ContactPoint contact = collision.contacts[0];//Gets the point of contact (only a single one) of the collision
 		Vector3 pos = contact.point;
 		Instantiate(sparkEffectObj, pos, new Quaternion(0,0,0,0));//Instantiates a sparking effect at the point of contact
 		sparkTimer = timeBetweenSparks;//Sets a timer until the next spark (used in OnCollisionStay())
-
 	}
 
 	void OnCollisionStay(Collision collision)
@@ -194,5 +206,22 @@ public class ControlScript : MonoBehaviour {
 		{
 			sparkTimer = 0;
 		}
-	}		
+
+		//If the player collides with any object other than a powerup, play the grind sound effect if it isn't already playing
+		if (!grindSound.isPlaying && collision.gameObject.tag != "PowerUp") 
+		{
+			grindSound.Play();
+		}
+	}
+		
+	void OnCollisionExit(Collision collision)
+	{
+		collisionCount--;//update collisionCount
+
+		//If the player is currently in 0 collisions, stop playing grind sound effect if it is playing
+		if (collisionCount == 0 && grindSound.isPlaying) 
+		{
+			grindSound.Stop();
+		}
+	}
 }
