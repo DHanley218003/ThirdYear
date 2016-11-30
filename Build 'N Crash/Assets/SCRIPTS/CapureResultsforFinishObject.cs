@@ -45,7 +45,8 @@ public class CapureResultsforFinishObject : MonoBehaviour
 
 	}
 
-	void OnCollisionEnter (Collision coll)
+	//void OnCollisionEnter (Collision coll)
+	void OnTriggerEnter(Collider coll )
 	{
 		countColisions++;
 		Result res = new Result ();

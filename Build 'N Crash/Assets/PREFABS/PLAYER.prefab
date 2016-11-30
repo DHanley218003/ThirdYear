@@ -149,7 +149,7 @@ GameObject:
   - 82: {fileID: 82000011291316198}
   m_Layer: 0
   m_Name: PLAYER
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2550,9 +2550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultDistance: 200
   m_UseNormal: 0
-  m_Image: {fileID: 114000011972475768}
-  m_ReticleTransform: {fileID: 224000014197560438}
-  m_Camera: {fileID: 4000013417311338}
+  m_Image: {fileID: 60395808}
+  m_ReticleTransform: {fileID: 1165127540}
+  m_Camera: {fileID: 63625376}
 --- !u!114 &114000012692778670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2577,8 +2577,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SelectionDuration: 1
   m_HideOnStart: 0
-  m_Selection: {fileID: 114000014076314664}
-  m_VRInput: {fileID: 114000014061078474}
+  m_Selection: {fileID: 0}
+  m_VRInput: {fileID: 0}
 --- !u!114 &114000012878278048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2847,7 +2847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31957ab02a8654b448736febf48c16e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FadeImage: {fileID: 114000011549809286}
+  m_FadeImage: {fileID: 0}
   m_DefaultSnapshot: {fileID: 24500003, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadedSnapshot: {fileID: 24515028, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c18b880c62744449e7f9ea93ee01f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Canvas: {fileID: 223000011278399542}
+  m_Canvas: {fileID: 62861216}
 --- !u!114 &114000014061078474
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Users/a00224300/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Users/a00224300/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +72,7 @@
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRInteractiveItem.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRTrackingReset.cs" />
      <Compile Include="Assets\SCRIPTS\CapureResultsforFinishObject.cs" />
+     <Compile Include="Assets\SCRIPTS\Finish.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\MainMenu.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\Menu.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\PlayerConfirmation.cs" />
@@ -93,10 +94,10 @@
      <None Include="Assets\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\Shaders\SlidingUV.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/a00224300/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Users/a00224300/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Users/a00218352/Desktop/unity 5.4.1/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,7 @@ function OnGUI ()
 		if (GUI.Button (Rect ((Screen.width / 2) - 150, (Screen.height / 2) + 100, 300, 40), "Restart Game"))
 		{
 			//Change this to the Current Scene
-			SceneManager.LoadScene("Colm Controls Attempt");
+			SceneManager.LoadScene(2);
 			//Time.timeScale = timeTimeScale;
 		}
 	}

@@ -1402,10 +1402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f869b5cfeef3447932306ce76d339f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 120
   turnSpeed: 3
-  updateRate: 0.5
-  speedTarget: 50
+  updateRate: 1
+  speedTarget: 120
   waypointNames: []
   waypoints: []
   currentWaypoint: {x: 0, y: 0, z: 0}

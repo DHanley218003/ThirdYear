@@ -31,6 +31,7 @@ public class SlowDown : MonoBehaviour {
             //playercs.setSpeed (120.0f);
             //print (player.speed);*/
 			player.slowDown();
+			playercs.slowSound.Play ();
             Destroy(this.gameObject);
         }
     }

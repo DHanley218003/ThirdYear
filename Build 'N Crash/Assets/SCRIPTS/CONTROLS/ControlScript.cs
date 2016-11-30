@@ -39,6 +39,8 @@ public class ControlScript : MonoBehaviour {
 
 	//A grinding sound effect, to play during collisions
 	public AudioSource grindSound;
+	//A grinding sound effect, to play during collisions
+	public AudioSource slowSound;
 
 	private int collisionCount; //Counts the number of collisions the object is currently in
 
@@ -84,15 +86,17 @@ public class ControlScript : MonoBehaviour {
 			fan.WriteToArduino (speed3.ToString ());
 
 		//If speed is above a certain level, and there is no speedEffect, create one as a child of the player, and adjust it's position and rotation to face the player from in front.
-		if (speed > 70 && speedEffect == null) {
+		if (speed > speedTarget * 1.2 && speedEffect == null) {
 			speedEffect = (GameObject)Instantiate (speedEffectObj, transform.position, transform.rotation);
 			speedParticles = speedEffect.GetComponent<ParticleSystem>();
 			speedEffect.transform.Translate(new Vector3(0,0,46));
 			speedEffect.transform.Rotate(new Vector3(0,180,0));
 			speedEffect.transform.parent = transform;
-		} 
+		}
+			
 		//When speed falls below a certain value, and there is a speedEffect, stop it and destroy it after a brief delay
-		else if (speed < 70 && speedEffect != null) {
+        else if (speed < speedTarget * 1.2 && speedEffect != null)
+        {
 			speedParticles.Stop();
 			Destroy (speedEffect, 0.5f);//A brief delay between stopping and destruction allows all particles to pass the player, rather than have them disappear instantly
 			speedEffect = null;//Ensure speedEffect is reset to null

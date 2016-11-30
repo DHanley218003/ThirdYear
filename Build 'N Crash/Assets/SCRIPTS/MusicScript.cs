@@ -11,6 +11,7 @@ public class MusicScript : MonoBehaviour {
 	public AudioSource menuMusic;
 	public AudioSource raceMusic;
 	public AudioSource finishMusic;
+    private Finish finish;
 
 	void Start () 
 	{
@@ -65,4 +66,23 @@ public class MusicScript : MonoBehaviour {
 			}
 		}
 	}
+
+    //Stop other songs and play finishMusic
+    public void playFinishMusic()
+    {
+        if (menuMusic.isPlaying)
+        {
+            menuMusic.Stop();
+        }
+
+        if (!finishMusic.isPlaying)
+        {
+            finishMusic.Play();
+        }
+
+        if (raceMusic.isPlaying)
+        {
+            raceMusic.Stop();
+        }
+    }
 }

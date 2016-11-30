@@ -35,16 +35,19 @@ public class Powerups : MonoBehaviour
 
 		}
 	}
+
 	public void speedBoost()
 	{
-		gameObject.GetComponent<ControlScript>().setSpeed (120.0f);
+		gameObject.GetComponent<ControlScript>().setSpeed(250.0f);
 	}
+
     public void speedLaser()
     {
         gameObject.GetComponent<ControlScript>().stealSpeed();
     }
+
     public void slowDown()
     {
-        gameObject.GetComponent<ControlScript>().setSpeed(10.0f);
+        gameObject.GetComponent<ControlScript>().setSpeed(20.0f);
     }
 }
