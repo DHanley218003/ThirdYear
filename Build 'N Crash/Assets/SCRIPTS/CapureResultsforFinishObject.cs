@@ -9,6 +9,7 @@ public struct Result
 	public double finishTime;
 	public double distance;
 	public Vector3 position;
+	public int indexing;
 }
 
 
@@ -25,6 +26,7 @@ public class CapureResultsforFinishObject : MonoBehaviour
 	public string resultsOfTheRace = "";
 	public SpawnLetter spl;
 	public double timerLast = 0;
+	public int countColisions = 0;
 
 	void Start ()
 	{
@@ -45,10 +47,12 @@ public class CapureResultsforFinishObject : MonoBehaviour
 
 	void OnCollisionEnter (Collision coll)
 	{
+		countColisions++;
 		Result res = new Result ();
 		res.name = coll.gameObject.name;
 		res.finishTime = Time.timeSinceLevelLoad - timeAtStart;
 		res.position = coll.gameObject.transform.position;
+		res.indexing = countColisions;
 		finishedList.Add (res);
 	
 		timerLast = Time.timeSinceLevelLoad - timeAtStart;
@@ -61,6 +65,7 @@ public class CapureResultsforFinishObject : MonoBehaviour
 			{
 				finishedNames.Add (rt.name);
 			}
+
 			foreach (GameObject go in allTheAiRacers)
 			{
 				participantsNames.Add (go.name);
@@ -73,8 +78,9 @@ public class CapureResultsforFinishObject : MonoBehaviour
 					{
 						finishedList.Add (secondaryResult (go));
 					}
+				
 			}
-			
+			//finishedList.OrderByDescending (r=>r.distance).ToList ();
 			if (onlyOnce)
 			{	
 				onlyOnce = false;
@@ -92,10 +98,12 @@ public class CapureResultsforFinishObject : MonoBehaviour
 
 	Result secondaryResult (GameObject go)
 	{
+		countColisions++;
 		Result res2 = new Result ();
 		res2.name = go.name;
 		res2.finishTime = 0.0f;
 		res2.distance = Vector3.Distance (transform.position, go.transform.position);
+		res2.indexing = countColisions;
 		return res2;
 	}
 
@@ -104,12 +112,12 @@ public class CapureResultsforFinishObject : MonoBehaviour
 		string abc = "";
 		if (r.finishTime > 0.1f)
 		{
-			abc += r.name + calcSpace (r.name) + "Time " + r.finishTime.ToString ("F2") + " _";
+			abc += r.indexing.ToString() +" "+ r.name + calcSpace (r.name) + "Time " + r.finishTime.ToString ("F2") + " _";
 		}
 		else
 		{					
 			double timeAprox = timerLast + r.distance / 31.0f;
-			abc += r.name + calcSpace (r.name) + "Time " + timeAprox.ToString ("F2") + " _";
+			abc += r.indexing.ToString()+" " + r.name + calcSpace (r.name) + "Time " + timeAprox.ToString ("F2") + " _";
 		}
 		return abc;
 	}
@@ -117,7 +125,7 @@ public class CapureResultsforFinishObject : MonoBehaviour
 	string calcSpace (string n)
 	{
 		string s = "";
-		for (int i = n.Length; i < 15; i++)
+		for (int i = n.Length; i < 10; i++)
 		{
 			s += " ";
 		}
