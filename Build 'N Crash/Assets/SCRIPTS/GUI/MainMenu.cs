@@ -4,6 +4,9 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour 
 {
+	public void Update()
+	{
+	}
 	public void quit()
 	{
 		Application.Quit ();

@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/Start.unity
   - enabled: 1
+    path: Assets/SCENES/Player Recognition.unity
+  - enabled: 1
     path: Assets/SCENES/Colm Controls Attempt.unity

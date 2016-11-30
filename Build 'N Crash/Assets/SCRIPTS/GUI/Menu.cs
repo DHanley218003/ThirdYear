@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using VRStandardAssets.Utils;
 
-public class Menu : MonoBehaviour 
+public class Menu : MonoBehaviour
 {
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 
@@ -11,8 +12,6 @@ public class Menu : MonoBehaviour
 	{
 		m_InteractiveItem.OnOver += HandleOver;
 		m_InteractiveItem.OnOut += HandleOut;
-		m_InteractiveItem.OnClick += HandleClick;
-		m_InteractiveItem.OnDoubleClick += HandleDoubleClick;
 	}
 	
 	
@@ -20,35 +19,26 @@ public class Menu : MonoBehaviour
 	{
 		m_InteractiveItem.OnOver -= HandleOver;
 		m_InteractiveItem.OnOut -= HandleOut;
-		m_InteractiveItem.OnClick -= HandleClick;
-		m_InteractiveItem.OnDoubleClick -= HandleDoubleClick;
 	}
 	
 	
 	//Handle the Over event
 	private void HandleOver()
 	{
-		Debug.Log("Show over state");
+		this.gameObject.GetComponent<Button> ().Select();
+		this.gameObject.GetComponent<SelectionRadial> ().Show();
 	}
 	
 	
 	//Handle the Out event
 	private void HandleOut()
 	{
-		Debug.Log("Show out state");
+		this.gameObject.GetComponent<SelectionRadial> ().Hide();
 	}
-	
-	
-	//Handle the Click event
-	private void HandleClick()
+
+	private void Update()
 	{
-		Debug.Log("Show click state");
-	}
-	
-	
-	//Handle the DoubleClick event
-	private void HandleDoubleClick()
-	{
-		Debug.Log("Show double click");
+		if (this.gameObject.GetComponent<SelectionRadial> ().RadialFilled)
+			this.gameObject.GetComponent<Button> ().onClick.Invoke ();
 	}
 }
