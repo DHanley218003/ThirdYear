@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,12 +71,14 @@
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRInput.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRInteractiveItem.cs" />
      <Compile Include="Assets\SCRIPTS\CONTROLS\VRTrackingReset.cs" />
+     <Compile Include="Assets\SCRIPTS\CapureResultsforFinishObject.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\MainMenu.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\Menu.cs" />
      <Compile Include="Assets\SCRIPTS\GUI\PlayerConfirmation.cs" />
      <Compile Include="Assets\SCRIPTS\HUD\Speed_Script.cs" />
      <Compile Include="Assets\SCRIPTS\MusicScript.cs" />
      <Compile Include="Assets\SCRIPTS\PowerUps\SpeedUp.cs" />
+     <Compile Include="Assets\SCRIPTS\SpawnLetter.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleInteractiveItem.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleRenderScale.cs" />
@@ -138,10 +140,10 @@
      <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
