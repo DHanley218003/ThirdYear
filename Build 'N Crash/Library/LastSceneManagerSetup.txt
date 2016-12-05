@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SCENES/Start.unity
+- path: Assets/SCENES/Cormac's World.unity
   isLoaded: 1
   isActive: 1

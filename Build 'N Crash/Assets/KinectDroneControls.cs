@@ -37,10 +37,10 @@ public class KinectDroneControls : MonoBehaviour {
 			turnInput = -1;
 		}
 
-		//Brings up menu if player makes an X shape with their arms
+		//Pauses the game if player makes an X shape with their arms (currently disabled)
 		if(playerLeftHand.transform.position.x > playerRightHand.transform.position.x + 0.0175 && Mathf.Abs(playerLeftHand.transform.position.y - playerRightHand.transform.position.y) < 0.05)
 		{
-			playerScript.pause();
+			//playerScript.pause();
 		}
 
 		//Calls a function in ControlScript to rotate the player based on their input
